@@ -1,0 +1,297 @@
+/* General Resets and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  /* Color Palette from the Prompt */
+  :root {
+    --primary-color: #3674B5;   /* Deeper Blue */
+    --secondary-color: #578FCA; /* Mellow Blue */
+    --accent1: #A1E3F9;         /* Light Blue */
+    --accent2: #D1F8EF;         /* Light Mint */
+  }
+  
+  /* Header / Navigation */
+  header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+  }
+  
+  .active {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .hero-content {
+    flex: 1;
+    max-width: 600px;
+    margin-right: 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-image img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 6px;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: var(--accent1);
+  }
+  
+  /* Mission Section */
+  .mission {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--accent2);
+  }
+  
+  .mission h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mission p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  /* Programs Section */
+  .programs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .program-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+    max-width: 250px;
+    text-align: center;
+  }
+  
+  .program-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  /* About Section */
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about-text h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .about-text p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .about-image img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 6px;
+  }
+  
+  /* History / Impact Section */
+  .history-impact {
+    background-color: var(--accent2);
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .history-impact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Volunteer Hero */
+  .volunteer-hero {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .volunteer-hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .volunteer-hero-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(86, 143, 202, 0.9);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    max-width: 400px;
+  }
+  
+  .volunteer-hero-text h2 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Volunteer Options */
+  .volunteer-options {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--accent2);
+  }
+  
+  .volunteer-options h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .option-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .option-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+    max-width: 250px;
+  }
+  
+  .option-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-form {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: var(--accent1);
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
